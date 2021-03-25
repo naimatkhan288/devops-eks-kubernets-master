@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: deployment-nodeport-service
 spec:
-  type: NodePort 
   selector: 
     app: myapp3
   ports: 
@@ -11,4 +10,5 @@ spec:
       port: 80
       targetPort: 80
       nodePort: 31233
+  type: NodePort 
     
